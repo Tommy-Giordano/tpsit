@@ -1,0 +1,12 @@
+Nodo *createNode(char data)
+{
+    Nodo *newNode = (Nodo *)malloc(sizeof(Nodo));
+    if (!newNode)
+    {
+        printf("Errore di allocazione memoria\n");
+        exit(1);))
+    }
+    newNode->parentesi = data;
+    newNode->next = NULL;
+    return newNode;
+}
